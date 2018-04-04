@@ -21,6 +21,8 @@ public abstract class BaseTest implements Autoconst {
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.get("https://www.betteru.in/");
 	}
+	
+	//before method 2
 	@BeforeMethod	
 	public void preCondition1() {
 		System.setProperty(CHROME_KEY,CHROME_VALUE);
