@@ -5,38 +5,38 @@
       <![CDATA[Title is not matchingOnline Educaton, Job Opportunities, Corporate Training | BetterU]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="93480" started-at="2018-04-05T07:45:42Z" finished-at="2018-04-05T07:47:16Z">
+  <suite name="Suite" duration-ms="108079" started-at="2018-04-05T19:25:51Z" finished-at="2018-04-05T19:27:39Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="93480" started-at="2018-04-05T07:45:42Z" finished-at="2018-04-05T07:47:16Z">
+    <test name="Test" duration-ms="108079" started-at="2018-04-05T19:25:51Z" finished-at="2018-04-05T19:27:39Z">
       <class name="com.betterU.script.DoLogin">
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.betterU.script.DoLogin@724af044]" name="preCondition" is-config="true" duration-ms="18261" started-at="2018-04-05T07:45:42Z" finished-at="2018-04-05T07:46:00Z">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.betterU.script.DoLogin@724af044]" name="preCondition" is-config="true" duration-ms="40328" started-at="2018-04-05T19:25:51Z" finished-at="2018-04-05T19:26:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="preCondition1()[pri:0, instance:com.betterU.script.DoLogin@724af044]" name="preCondition1" is-config="true" duration-ms="15401" started-at="2018-04-05T07:46:00Z" finished-at="2018-04-05T07:46:16Z">
+        <test-method status="PASS" signature="preCondition1()[pri:0, instance:com.betterU.script.DoLogin@724af044]" name="preCondition1" is-config="true" duration-ms="17446" started-at="2018-04-05T19:26:31Z" finished-at="2018-04-05T19:26:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition1 -->
-        <test-method status="PASS" signature="doLogin()[pri:0, instance:com.betterU.script.DoLogin@724af044]" name="doLogin" duration-ms="3658" started-at="2018-04-05T07:46:16Z" finished-at="2018-04-05T07:46:20Z">
+        <test-method status="PASS" signature="doLogin()[pri:0, instance:com.betterU.script.DoLogin@724af044]" name="doLogin" duration-ms="1619" started-at="2018-04-05T19:26:49Z" finished-at="2018-04-05T19:26:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.betterU.script.DoLogin@724af044]" name="postCondition" is-config="true" duration-ms="3193" started-at="2018-04-05T07:46:20Z" finished-at="2018-04-05T07:46:23Z">
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.betterU.script.DoLogin@724af044]" name="postCondition" is-config="true" duration-ms="4021" started-at="2018-04-05T19:26:50Z" finished-at="2018-04-05T19:26:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
       </class> <!-- com.betterU.script.DoLogin -->
       <class name="com.betterU.script.VerifyLoginPage">
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.betterU.script.VerifyLoginPage@4678c730]" name="preCondition" is-config="true" duration-ms="25634" started-at="2018-04-05T07:46:23Z" finished-at="2018-04-05T07:46:48Z">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.betterU.script.VerifyLoginPage@4678c730]" name="preCondition" is-config="true" duration-ms="16863" started-at="2018-04-05T19:26:54Z" finished-at="2018-04-05T19:27:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="preCondition1()[pri:0, instance:com.betterU.script.VerifyLoginPage@4678c730]" name="preCondition1" is-config="true" duration-ms="13811" started-at="2018-04-05T07:46:48Z" finished-at="2018-04-05T07:47:02Z">
+        <test-method status="PASS" signature="preCondition1()[pri:0, instance:com.betterU.script.VerifyLoginPage@4678c730]" name="preCondition1" is-config="true" duration-ms="13476" started-at="2018-04-05T19:27:11Z" finished-at="2018-04-05T19:27:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition1 -->
-        <test-method status="FAIL" signature="testVerifyLoginPage()[pri:0, instance:com.betterU.script.VerifyLoginPage@4678c730]" name="testVerifyLoginPage" duration-ms="10976" started-at="2018-04-05T07:47:02Z" finished-at="2018-04-05T07:47:13Z">
+        <test-method status="FAIL" signature="testVerifyLoginPage()[pri:0, instance:com.betterU.script.VerifyLoginPage@4678c730]" name="testVerifyLoginPage" duration-ms="11622" started-at="2018-04-05T19:27:25Z" finished-at="2018-04-05T19:27:36Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -80,7 +80,7 @@ at org.testng.TestNG.main(TestNG.java:1323)
             </line>
           </reporter-output>
         </test-method> <!-- testVerifyLoginPage -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.betterU.script.VerifyLoginPage@4678c730]" name="postCondition" is-config="true" duration-ms="2526" started-at="2018-04-05T07:47:13Z" finished-at="2018-04-05T07:47:16Z">
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.betterU.script.VerifyLoginPage@4678c730]" name="postCondition" is-config="true" duration-ms="2680" started-at="2018-04-05T19:27:36Z" finished-at="2018-04-05T19:27:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
