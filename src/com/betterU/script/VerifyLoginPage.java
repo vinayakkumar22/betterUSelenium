@@ -10,7 +10,7 @@ public class VerifyLoginPage extends BaseTest{
 	@Test
 	public void testVerifyLoginPage() {
 		LoginPage l = new LoginPage(driver); 
-		l.verifyTitle("Online Education, Job Opportunities, Corporate Training | BetterU");
+		l.verifyTitle("Online Educaton, Job Opportunities, Corporate Training | BetterU");
 		
 	}
 	

@@ -5,18 +5,12 @@
     <classes>
       <class name="com.betterU.script.VerifyLoginPage">
         <methods>
+          <include name="preCondition1"/>
           <include name="postCondition"/>
           <include name="testVerifyLoginPage"/>
           <include name="preCondition"/>
         </methods>
       </class> <!-- com.betterU.script.VerifyLoginPage -->
-      <class name="com.betterU.script.DoLogin">
-        <methods>
-          <include name="postCondition"/>
-          <include name="doLogin"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.betterU.script.DoLogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
