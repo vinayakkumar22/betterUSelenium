@@ -23,7 +23,7 @@ public abstract class BaseTest implements Autoconst {
 		driver.get("https://www.betteru.in/");
 	}
 	
-	//before method 2
+	//before method 2 new branch
 	@BeforeMethod	
 	public void preCondition1() {
 		System.setProperty(CHROME_KEY,CHROME_VALUE);
