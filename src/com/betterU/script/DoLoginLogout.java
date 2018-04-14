@@ -6,9 +6,9 @@ import com.betterU.pages.LoginPage;
 
 import generic.BaseTest;
 
-public class DoLogin extends BaseTest{
+public class DoLoginLogout extends BaseTest{
 	@Test
-	public void doLogin() {
+	public void doLoginLogout() {
 		LoginPage l = new LoginPage(driver);
 		l.clickLoginSignup();
 		
@@ -19,5 +19,7 @@ public class DoLogin extends BaseTest{
 		//Do Login
 		l.clickLogin();
 	}
+	
+	
 
 }
