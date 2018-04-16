@@ -1,14 +1,16 @@
 package com.betterU.script;
 
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.betterU.pages.LoginPage;
+import com.betterU.pages.LogoutPage;
 
 import generic.BaseTest;
 
-public class DoLoginLogout extends BaseTest{
+public class DoLogout extends BaseTest{
 	@Test
-	public void doLoginLogout() {
+	public void doLogout() throws InterruptedException {
 		LoginPage l = new LoginPage(driver);
 		l.clickLoginSignup();
 		
@@ -18,7 +20,13 @@ public class DoLoginLogout extends BaseTest{
 		l.setUserPassword("devkidevi");
 		//Do Login
 		l.clickLogin();
-	}
+		
+		Thread.sleep(5000);
+		LogoutPage l1= new LogoutPage(driver);
+		l1.clickProfile();
+		l1.clickLogout();
+		
+			}
 	
 	
 

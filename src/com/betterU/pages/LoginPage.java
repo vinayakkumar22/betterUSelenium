@@ -1,4 +1,5 @@
 package com.betterU.pages;
+import generic.BasePage;
 
 import java.util.concurrent.TimeoutException;
 
@@ -28,6 +29,7 @@ public class LoginPage extends BasePage {
     @FindBy (className = "logerror")
     private WebElement ErrMsg;
     
+    
     public LoginPage(WebDriver driver) {
 		super(driver);
     }
@@ -45,20 +47,24 @@ public class LoginPage extends BasePage {
     }
     public void clickLogin() {
     	signin.click();
+    	
     }
-    
-    
+        
     public void verifyErrIsPresent(SoftAssert s) {
     	WebDriverWait wait= new WebDriverWait(driver,10);
     	
     	try {
     		wait.until(ExpectedConditions.visibilityOf(ErrMsg));
     		Reporter.log("Err Msg is displayed",true);
+    		{
+    			s.assertAll();
+    		}
     	}
     	catch (Exception e) {
     		Reporter.log("Err msg is not displayed",true);
 			// TODO: handle exception
     		s.fail();
+    		
 		}
     }
     

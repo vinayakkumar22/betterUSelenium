@@ -1,4 +1,4 @@
-package com.betterU.pages;
+package generic;
 
 import java.util.concurrent.TimeoutException;
 
