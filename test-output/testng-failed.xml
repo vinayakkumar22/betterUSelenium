@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="1" name="TestOnChrome(failed)" parallel="tests">
+    <parameter name="browser" value="CHROME"/>
     <classes>
       <class name="com.betterU.script.DoLogout">
         <methods>
@@ -11,5 +12,17 @@
         </methods>
       </class> <!-- com.betterU.script.DoLogout -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TestOnChrome(failed) -->
+  <test thread-count="1" name="TestOnFireFox(failed)" parallel="tests">
+    <parameter name="browser" value="FIREFOX"/>
+    <classes>
+      <class name="com.betterU.script.DoLogout">
+        <methods>
+          <include name="postCondition"/>
+          <include name="doLogout"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.betterU.script.DoLogout -->
+    </classes>
+  </test> <!-- TestOnFireFox(failed) -->
 </suite> <!-- Failed suite [Suite] -->

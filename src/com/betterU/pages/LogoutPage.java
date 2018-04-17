@@ -18,7 +18,7 @@ public class LogoutPage extends BasePage {
  		// TODO Auto-generated constructor stub
 	
 
-    @FindBy(xpath=("//*[@id=\"myHeader\"]/div/div/div[1]/div[2]/div[1]/div/a/span[1]"))
+    @FindBy(xpath=("/html/body/div[3]/div[1]/header/div[1]/div/div/div[1]/div[2]/div[1]/div/a/span[1]"))
     private WebElement Profile;
     @FindBy(xpath=("//a[text()='Logout']"))
     private WebElement Logout;
@@ -30,6 +30,7 @@ public class LogoutPage extends BasePage {
     }
     
     public void clickProfile() {
+    	WebDriverWait wait= new WebDriverWait(driver,5);
     	Profile.click();
     }
     public void clickLogout() {

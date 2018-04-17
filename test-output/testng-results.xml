@@ -1,45 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
     <line>
       <![CDATA[Err msg is not displayed]]>
     </line>
+    <line>
+      <![CDATA[Title is Matching]]>
+    </line>
+    <line>
+      <![CDATA[Err msg is not displayed]]>
+    </line>
+    <line>
+      <![CDATA[Err msg is not displayed]]>
+    </line>
+    <line>
+      <![CDATA[Title is Matching]]>
+    </line>
+    <line>
+      <![CDATA[Err msg is not displayed]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="62088" started-at="2018-04-16T20:42:02Z" finished-at="2018-04-16T20:43:04Z">
+  <suite name="Suite" duration-ms="216679" started-at="2018-04-17T19:58:58Z" finished-at="2018-04-17T20:02:34Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="62088" started-at="2018-04-16T20:42:02Z" finished-at="2018-04-16T20:43:04Z">
+    <test name="TestOnChrome" duration-ms="91179" started-at="2018-04-17T19:58:58Z" finished-at="2018-04-17T20:00:29Z">
       <class name="com.betterU.script.DoLogin">
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.betterU.script.DoLogin@6043cd28]" name="preCondition" is-config="true" duration-ms="13830" started-at="2018-04-16T20:42:02Z" finished-at="2018-04-16T20:42:15Z">
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:com.betterU.script.DoLogin@12cdcf4]" name="preCondition" is-config="true" duration-ms="12878" started-at="2018-04-17T19:58:58Z" finished-at="2018-04-17T19:59:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="doLogin()[pri:0, instance:com.betterU.script.DoLogin@6043cd28]" name="doLogin" duration-ms="25284" started-at="2018-04-16T20:42:15Z" finished-at="2018-04-16T20:42:41Z">
+        <test-method status="PASS" signature="doLogin()[pri:0, instance:com.betterU.script.DoLogin@12cdcf4]" name="doLogin" duration-ms="24867" started-at="2018-04-17T19:59:10Z" finished-at="2018-04-17T19:59:35Z">
           <reporter-output>
             <line>
               <![CDATA[Err msg is not displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.betterU.script.DoLogin@6043cd28]" name="postCondition" is-config="true" duration-ms="0" started-at="2018-04-16T20:42:41Z" finished-at="2018-04-16T20:42:41Z">
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.betterU.script.DoLogin@12cdcf4]" name="postCondition" is-config="true" duration-ms="642" started-at="2018-04-17T19:59:35Z" finished-at="2018-04-17T19:59:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
       </class> <!-- com.betterU.script.DoLogin -->
-      <class name="com.betterU.script.DoLogout">
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.betterU.script.DoLogout@cb51256]" name="preCondition" is-config="true" duration-ms="15030" started-at="2018-04-16T20:42:41Z" finished-at="2018-04-16T20:42:56Z">
+      <class name="com.betterU.script.VerifyLoginPage">
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:com.betterU.script.VerifyLoginPage@5bcea91b]" name="preCondition" is-config="true" duration-ms="11459" started-at="2018-04-17T19:59:36Z" finished-at="2018-04-17T19:59:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="doLogout()[pri:0, instance:com.betterU.script.DoLogout@cb51256]" name="doLogout" duration-ms="7929" started-at="2018-04-16T20:42:56Z" finished-at="2018-04-16T20:43:04Z">
+        <test-method status="PASS" signature="testVerifyLoginPage()[pri:0, instance:com.betterU.script.VerifyLoginPage@5bcea91b]" name="testVerifyLoginPage" duration-ms="25" started-at="2018-04-17T19:59:47Z" finished-at="2018-04-17T19:59:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Title is Matching]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testVerifyLoginPage -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.betterU.script.VerifyLoginPage@5bcea91b]" name="postCondition" is-config="true" duration-ms="740" started-at="2018-04-17T19:59:47Z" finished-at="2018-04-17T19:59:48Z">
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.betterU.script.VerifyLoginPage -->
+      <class name="com.betterU.script.DoLogout">
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:com.betterU.script.DoLogout@5f3a4b84]" name="preCondition" is-config="true" duration-ms="12617" started-at="2018-04-17T19:59:48Z" finished-at="2018-04-17T20:00:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="doLogout()[pri:0, instance:com.betterU.script.DoLogout@5f3a4b84]" name="doLogout" duration-ms="27245" started-at="2018-04-17T20:00:01Z" finished-at="2018-04-17T20:00:28Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Err msg is not displayed]]>
+            </line>
+          </reporter-output>
         </test-method> <!-- doLogout -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.betterU.script.DoLogout@cb51256]" name="postCondition" is-config="true" duration-ms="0" started-at="2018-04-16T20:43:04Z" finished-at="2018-04-16T20:43:04Z">
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.betterU.script.DoLogout@5f3a4b84]" name="postCondition" is-config="true" duration-ms="680" started-at="2018-04-17T20:00:28Z" finished-at="2018-04-17T20:00:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
       </class> <!-- com.betterU.script.DoLogout -->
-    </test> <!-- Test -->
+    </test> <!-- TestOnChrome -->
+    <test name="TestOnFireFox" duration-ms="125482" started-at="2018-04-17T20:00:29Z" finished-at="2018-04-17T20:02:34Z">
+      <class name="com.betterU.script.DoLogin">
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:com.betterU.script.DoLogin@8646db9]" name="preCondition" is-config="true" duration-ms="31094" started-at="2018-04-17T20:00:29Z" finished-at="2018-04-17T20:01:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FIREFOX]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="doLogin()[pri:0, instance:com.betterU.script.DoLogin@8646db9]" name="doLogin" duration-ms="24297" started-at="2018-04-17T20:01:00Z" finished-at="2018-04-17T20:01:24Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Err msg is not displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.betterU.script.DoLogin@8646db9]" name="postCondition" is-config="true" duration-ms="1778" started-at="2018-04-17T20:01:24Z" finished-at="2018-04-17T20:01:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.betterU.script.DoLogin -->
+      <class name="com.betterU.script.VerifyLoginPage">
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:com.betterU.script.VerifyLoginPage@37374a5e]" name="preCondition" is-config="true" duration-ms="18101" started-at="2018-04-17T20:01:26Z" finished-at="2018-04-17T20:01:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FIREFOX]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="testVerifyLoginPage()[pri:0, instance:com.betterU.script.VerifyLoginPage@37374a5e]" name="testVerifyLoginPage" duration-ms="19" started-at="2018-04-17T20:01:44Z" finished-at="2018-04-17T20:01:44Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Title is Matching]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testVerifyLoginPage -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.betterU.script.VerifyLoginPage@37374a5e]" name="postCondition" is-config="true" duration-ms="1867" started-at="2018-04-17T20:01:44Z" finished-at="2018-04-17T20:01:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.betterU.script.VerifyLoginPage -->
+      <class name="com.betterU.script.DoLogout">
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:com.betterU.script.DoLogout@4671e53b]" name="preCondition" is-config="true" duration-ms="21814" started-at="2018-04-17T20:01:46Z" finished-at="2018-04-17T20:02:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FIREFOX]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="doLogout()[pri:0, instance:com.betterU.script.DoLogout@4671e53b]" name="doLogout" duration-ms="24853" started-at="2018-04-17T20:02:08Z" finished-at="2018-04-17T20:02:33Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Err msg is not displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- doLogout -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.betterU.script.DoLogout@4671e53b]" name="postCondition" is-config="true" duration-ms="1650" started-at="2018-04-17T20:02:33Z" finished-at="2018-04-17T20:02:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.betterU.script.DoLogout -->
+    </test> <!-- TestOnFireFox -->
   </suite> <!-- Suite -->
 </testng-results>

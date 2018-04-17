@@ -21,7 +21,11 @@ public class DoLogout extends BaseTest{
 		//Do Login
 		l.clickLogin();
 		
-		Thread.sleep(5000);
+		SoftAssert s =new SoftAssert();
+		l.verifyErrIsPresent(s);
+		
+		
+		
 		LogoutPage l1= new LogoutPage(driver);
 		l1.clickProfile();
 		l1.clickLogout();

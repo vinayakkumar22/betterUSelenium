@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.betterU.script.VerifyLoginPage">
+      <class name="com.betterU.script.DoLogout">
         <methods>
           <include name="postCondition"/>
-          <include name="testVerifyLoginPage"/>
+          <include name="doLogout"/>
           <include name="preCondition"/>
         </methods>
-      </class> <!-- com.betterU.script.VerifyLoginPage -->
+      </class> <!-- com.betterU.script.DoLogout -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -107,7 +107,27 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.betterU.script.DoLogin" hash-for-method="doLogin">doLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.betterU.script.DoLogout" hash-for-method="doLogout">doLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.betterU.script.DoLogout" hash-for-method="doLogout">doLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.betterU.script.VerifyLoginPage" hash-for-method="testVerifyLoginPage">testVerifyLoginPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.betterU.script.VerifyLoginPage" hash-for-method="testVerifyLoginPage">testVerifyLoginPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,9 +145,38 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.betterU.script.DoLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin">
+                  </a> <!-- doLogin -->
+                  <span class="method-name">doLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin">
+                  </a> <!-- doLogin -->
+                  <span class="method-name">doLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.betterU.script.DoLogout</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogout">
+                  </a> <!-- doLogout -->
+                  <span class="method-name">doLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="doLogout">
@@ -140,14 +189,21 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.betterU.script.DoLogin</span>
+              <span class="class-name">com.betterU.script.VerifyLoginPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="doLogin">
-                  </a> <!-- doLogin -->
-                  <span class="method-name">doLogin</span>
+                  <a name="testVerifyLoginPage">
+                  </a> <!-- testVerifyLoginPage -->
+                  <span class="method-name">testVerifyLoginPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testVerifyLoginPage">
+                  </a> <!-- testVerifyLoginPage -->
+                  <span class="method-name">testVerifyLoginPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -161,13 +217,23 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;TestOnChrome&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;CHROME&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.betterU.script.DoLogin&quot;/&gt;
+      &lt;class name=&quot;com.betterU.script.VerifyLoginPage&quot;/&gt;
       &lt;class name=&quot;com.betterU.script.DoLogout&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- TestOnChrome --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;TestOnFireFox&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;FIREFOX&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.betterU.script.DoLogin&quot;/&gt;
+      &lt;class name=&quot;com.betterU.script.VerifyLoginPage&quot;/&gt;
+      &lt;class name=&quot;com.betterU.script.DoLogout&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestOnFireFox --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -179,7 +245,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">TestOnChrome (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">TestOnFireFox (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -205,20 +274,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'doLogin')
-data.setCell(0, 2, 'com.betterU.script.DoLogin')
-data.setCell(0, 3, 25284);
+data.setCell(0, 1, 'doLogout')
+data.setCell(0, 2, 'com.betterU.script.DoLogout')
+data.setCell(0, 3, 27245);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'doLogout')
-data.setCell(1, 2, 'com.betterU.script.DoLogout')
-data.setCell(1, 3, 7929);
+data.setCell(1, 1, 'doLogin')
+data.setCell(1, 2, 'com.betterU.script.DoLogin')
+data.setCell(1, 3, 24867);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'doLogout')
+data.setCell(2, 2, 'com.betterU.script.DoLogout')
+data.setCell(2, 3, 24853);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'doLogin')
+data.setCell(3, 2, 'com.betterU.script.DoLogin')
+data.setCell(3, 3, 24297);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testVerifyLoginPage')
+data.setCell(4, 2, 'com.betterU.script.VerifyLoginPage')
+data.setCell(4, 3, 25);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testVerifyLoginPage')
+data.setCell(5, 2, 'com.betterU.script.VerifyLoginPage')
+data.setCell(5, 3, 19);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -229,6 +314,36 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">doLogout</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Err msg is not displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testVerifyLoginPage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Title is Matching</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">doLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Err msg is not displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testVerifyLoginPage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Title is Matching</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">doLogout</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Err msg is not displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">doLogin</span>
               <div class="reporter-method-output-div">
@@ -252,31 +367,91 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.betterU.script.DoLogin</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">preCondition</span>
+                <span class="method-name">preCondition(CHROME)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">doLogin</span>
-                <span class="method-start">13830 ms</span>
+                <span class="method-start">12878 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">39114 ms</span>
+                <span class="method-start">37748 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.betterU.script.VerifyLoginPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(CHROME)</span>
+                <span class="method-start">38392 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testVerifyLoginPage</span>
+                <span class="method-start">49851 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">49878 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.betterU.script.DoLogout</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">preCondition</span>
-                <span class="method-start">39114 ms</span>
+                <span class="method-name">preCondition(CHROME)</span>
+                <span class="method-start">50620 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">doLogout</span>
-                <span class="method-start">54144 ms</span>
+                <span class="method-start">63237 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">62073 ms</span>
+                <span class="method-start">90483 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.betterU.script.DoLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(FIREFOX)</span>
+                <span class="method-start">91185 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">doLogin</span>
+                <span class="method-start">122279 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">146580 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.betterU.script.VerifyLoginPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(FIREFOX)</span>
+                <span class="method-start">148358 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testVerifyLoginPage</span>
+                <span class="method-start">166459 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">166478 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.betterU.script.DoLogout</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(FIREFOX)</span>
+                <span class="method-start">168346 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">doLogout</span>
+                <span class="method-start">190160 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">215014 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
